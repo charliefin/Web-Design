@@ -20,6 +20,20 @@ div#myDiv1 {
   transform: matrix(1, -0.3, 0, 1, 0, 0);
 }
 
+div#myDiv2 {
+  width: 100px;
+  height: 100px;
+  transition: width 3s, height 3s, transform 3s;
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/51BE2XNAE9L._AC_.jpg');
+  background-size: contain;
+}
+
+div#myDiv2:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -56,6 +70,9 @@ div#myDiv1 {
 
     <div id="myDiv1">
         Using the matrix() method.
+    </div>
+
+    <div id="myDiv3">
     </div>
 </body>
 </html>
